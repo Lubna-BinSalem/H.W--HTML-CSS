@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="icon" type="image/x-icon" href="./img/freecodecamplogo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color:rgb(179, 246, 246);">
+
+    <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+    </header>
+        <div class="box">
+            <p>let us know how we can improve freeCodeCamp </p>
+
+    <div class="container">
+        
+        <div class="item-left">
+        <label id="name-label" for="name">* Name:</label>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <label id="email-label" for="email">*Email:</label>
+        <br/>
+        <br/>
+        <br/>
+        <label id="number-label" for="number">*Age:</label>
+        <br/>
+        <p>Which option best describes your current role?</p>
+        <p>*How likely is tha you would recommend freeCodeCamp to a friend?</p>
+        <p>What do you like most in FCC:</p>
+        <p>Things that should be improved in the future(Check all that apply)</p>
+            </div>
+
+
+        <div class="item-right">
+        <form id="survay-form" >
+            <div class="form-group">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" />
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"/>
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="age" id="number" class="form-control" placeholder="Age"/>
+            </div>
+
+            <div class="form-group">
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Student</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+                <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+        <br/>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+      <br/>
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+            </div>
+
+            
+            <div class="form-group">
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                  </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label
+                ><input
+                  name="prefer"
+                  value="front-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Front-end Projects</label
+              >
+              <br/>
+              <label>
+                <input
+                  name="prefer"
+                  value="back-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Back-end Projects</label
+              >
+              <br/>
+              <label
+                ><input
+                  name="prefer"
+                  value="data-visualization"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Data Visualization</label
+              >
+            </div>
+
+
+        </form>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
